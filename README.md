@@ -25,30 +25,36 @@ Descripción General:
 
 Características Principales:
 Sistema de Usuarios y Reconocimiento de Contactos:
+
   Al registrarse, los usuarios proporcionan su número de teléfono, lo que les permite conectarse con
   amigos que también están en la plataforma.
   La aplicación escanea los contactos del teléfono del usuario y sugiere agregar a aquellos que ya
   están en la plataforma como amigos.
+  
 Calendario de Eventos:
   Los usuarios pueden crear y gestionar eventos, como reuniones, salidas o fiestas, directamente
   desde la aplicación.
   El calendario muestra de manera clara todos los eventos programados, con la opción de recibir
   recordatorios antes de la fecha.
+  
 Sistema de Chat Individual y Grupal:
   La aplicación cuenta con un sistema de chat que permite a los usuarios comunicarse de forma
   individual o en grupos con sus amigos.
   Los chats individuales y grupales están integrados con otras funciones de la aplicación, como la
   creación de eventos y la gestión del calendario
+  
 Recordatorios de Mantenimiento de Contacto:
   La aplicación rastrea la última vez que el usuario se ha comunicado con cada uno de sus amigos y
   envía recordatorios automáticos para mantener el contacto regularmente.
   Estos recordatorios pueden personalizarse según las preferencias del usuario, estableciendo la
   frecuencia de los recordatorios o seleccionando amigos prioritarios.
+  
 Recopilación de Eventos Locales:
   Una pestaña especial muestra eventos locales en la zona del usuario, permitiéndoles descubrir y
   compartir eventos interesantes con amigos.
   Los usuarios pueden seleccionar eventos y compartirlos directamente en chats individuales o
   grupales, facilitando la coordinación de asistencias.
+  
 Generación de Eventos desde el Chat:
   Los usuarios pueden marcar mensajes importantes en el chat y convertirlos automáticamente en
   eventos en el calendario.
