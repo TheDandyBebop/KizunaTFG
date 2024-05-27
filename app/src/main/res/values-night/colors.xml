@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color para el borde en el tema oscuro -->
+    <color name="edittext_border_color">#FFFFFF</color>
+</resources>

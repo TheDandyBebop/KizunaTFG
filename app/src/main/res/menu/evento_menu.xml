@@ -1,0 +1,11 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_crear_evento"
+        android:orderInCategory="200"
+        app:showAsAction="withText"
+        app:icon="@drawable/anadir_evento_light"
+        android:title="Crear nuevo Evento"
+        tools:ignore="HardcodedText" />
+    </menu>

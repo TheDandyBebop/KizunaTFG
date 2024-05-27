@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kizuna</string>
+    <string name="hello_blank_fragment">"  "</string>
+    <string name="tituloContactos">Contactos en Kizuna</string>
+</resources>

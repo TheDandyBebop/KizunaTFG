@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "358440474838",
+    "firebase_url": "https://kizuna-a5d17-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "kizuna-a5d17",
+    "storage_bucket": "kizuna-a5d17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358440474838:android:3565f9dfa8a95e251c1177",
+        "android_client_info": {
+          "package_name": "com.example.kizunachat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358440474838-shk70cnr7189ku5ch2t93f6vgntvbmn2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kizunachat",
+            "certificate_hash": "54fc9e3b16974519b5041370a329f440963bb18d"
+          }
+        },
+        {
+          "client_id": "358440474838-ckvft1dec0sooi698hvg01o7iq4fru34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqp0QeLdU1TW6yNTeBRriAq73kW3pncyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358440474838-ckvft1dec0sooi698hvg01o7iq4fru34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

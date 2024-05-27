@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_titulo_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/bree_serif"
+        android:text="TextView"
+        android:textColor="#5E4A86"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_desc_calendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_titulo_calendar"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/bree_serif"
+        android:text="TextView"
+        android:textColor="#5E4A86"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_titulo_hsI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_desc_calendario"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bree_serif"
+        android:text="Hora de Inicio:"
+        android:textColor="#5E4A86"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_hs_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_desc_calendario"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/tv_titulo_hsI"
+        android:fontFamily="@font/bree_serif"
+        android:text="TextView"
+        android:textColor="#5E4A86"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_titulo_hsF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_titulo_hsI"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/bree_serif"
+        android:text="Hora de Finalizacion:"
+        android:textColor="#5E4A86"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_hs_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hs_inicio"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/tv_titulo_hsF"
+        android:fontFamily="@font/bree_serif"
+        android:text="TextView"
+        android:textColor="#5E4A86"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/tv_titulo_hsF"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

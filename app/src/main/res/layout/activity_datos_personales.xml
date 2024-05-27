@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosPersonales"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/tvNombreUsuario"
+        style="@style/welcome"
+        android:layout_width="331dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="@font/poetsen"
+        android:text="@string/introduciNombreUsuario_ES"
+        app:layout_constraintBottom_toTopOf="@+id/ivFotoPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFotoPerfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="244dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/hotline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="@drawable/hotline"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etUsernamer"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="232dp"
+        android:background="@drawable/background_round"
+        android:ems="10"
+        android:hint="@string/numUser_ES"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColorLink="#5E5656"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEnviarNombreFoto"
+        android:layout_width="138dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginEnd="137dp"
+
+        android:layout_marginBottom="88dp"
+        android:text="@string/btnAceptar_ES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kizuna</string>
+    <string name="privacidad_ES">Please accept our privacy policy by clicking Continue</string>
+    <string name="bienvenida_ES">Welcome to Kizuna</string>
+    <string name="hello_blank_fragment">"  "</string>
+    <string name="introduciTelefono_ES">Introduce your phone number</string>
+    <string name="btnAceptar_ES">Continue</string>
+    <string name="introduciCodTelefono_ES">Introduce your phone code</string>
+    <string name="btnVerificarCodTelefono_ES">Verify</string>
+    <string name="introduciNombreUsuario_ES">Introduce you User Name and profile photo</string>
+    <string name="numUser_ES">User Name</string>
+    <string name="tituloContactos">Contacts in Kizuna</string>
+</resources>
