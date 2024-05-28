@@ -1,0 +1,165 @@
+@startuml
+package com.example.kizunachat {
+    class MainActivity {
+        - onCreate(Bundle savedInstanceState)
+        - inicioActivityHome()
+    }
+
+    class DatosPersonales {
+        - getNombre()
+        - setNombre(String nombre)
+        - getTelefono()
+        - setTelefono(String telefono)
+        - getUrlImagen()
+        - setUrlImagen(String urlImagen)
+        - getListaAmigos()
+        - setListaAmigos(Map<String, AmigosChats> listaAmigos)
+    }
+
+    class VentanaAñadirEvento {
+        - onCreate(Bundle savedInstanceState)
+    }
+
+    class ventanaChat {
+        - onCreate(Bundle savedInstanceState)
+    }
+
+    class ventanaContactos {
+        - onCreate(Bundle savedInstanceState)
+    }
+
+    class VentanaNuevoEventoGlobal {
+        - onCreate(Bundle savedInstanceState)
+    }
+
+    class VentanaPrincipal {
+        - onCreate(Bundle savedInstanceState)
+    }
+
+    class VerificacionActivity {
+        - onCreate(Bundle savedInstanceState)
+    }
+}
+
+package com.example.kizunachat.ClasesObjetos {
+    class Usuario {
+        String id
+        String nombre
+        String email
+        String imagenUrl
+        boolean status
+        + getId()
+        + setId(String id)
+        + getNombre()
+        + setNombre(String nombre)
+        + getEmail()
+        + setEmail(String email)
+        + getImagenUrl()
+        + setImagenUrl(String imagenUrl)
+        + isStatus()
+        + setStatus(boolean status)
+    }
+
+    class AmigosChats {
+        String id
+        String nombre
+    }
+
+    class EventosAyuntamiento {
+        String id
+        String nombre
+    }
+
+    class EventosResponse {
+        List<EventosAyuntamiento> eventos
+    }
+
+    class EventosUsuarios {
+        String id
+        String nombre
+    }
+
+    class Mensaje {
+        String id
+        String texto
+        String autor
+    }
+}
+
+package com.example.kizunachat.ClasesApoyo {
+    class BusquedaContactos {
+        + buscar()
+    }
+
+    class ComprobadorInactividad {
+        + comprobar()
+    }
+
+    class OnContactosCargadosListener {
+        + onContactosCargados()
+    }
+
+    class RecEventos {
+        + recibirEventos()
+    }
+}
+
+package com.example.kizunachat.dialogs {
+    class DialogoEvento {
+        + mostrarDialogo()
+    }
+
+    class DialogoEventosCalendario {
+        + mostrarDialogo()
+    }
+
+    class DialogoNotificacionContacto {
+        + mostrarDialogo()
+    }
+}
+
+package com.example.kizunachat.fragments {
+    class Calendario {
+        + onCreateView()
+    }
+
+    class Chats {
+        + onCreateView()
+    }
+
+    class Eventos {
+        + onCreateView()
+    }
+
+    class PantallaPoliticaPrivacidad {
+        + onCreateView()
+    }
+
+    class RegistroTelefonoFragment {
+        + onCreateView()
+    }
+}
+
+
+MainActivity ..> VentanaPrincipal : <<create>>
+MainActivity ..> PantallaPoliticaPrivacidad : <<create>>
+PantallaPoliticaPrivacidad ..> RegistroTelefonoFragment : <<create>>
+RegistroTelefonoFragment ..> VerificacionActivity : <<create>>
+VerificacionActivity ..> DatosPersonales : <<create>>
+DatosPersonales ..> VentanaPrincipal : <<create>>
+
+VentanaPrincipal ..> Chats : <<create>>
+VentanaPrincipal ..> Calendario : <<create>>
+VentanaPrincipal ..> Eventos : <<create>>
+
+ventanaContactos ..> Usuario : <<use>>
+ventanaChat ..> Mensaje : <<use>>
+VentanaAñadirEvento ..> EventosUsuarios : <<use>>
+
+
+BusquedaContactos ..> Usuario : <<use>>
+RecEventos ..> EventosAyuntamiento : <<use>>
+RecEventos ..> EventosResponse : <<use>>
+
+OnContactosCargadosListener ..|> Interface
+@enduml

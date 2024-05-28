@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.inicio_app); // Establece la vista de la actividad como el diseño definido en activity_main.xml
         //Inicializo mi auth de firebase
         mAuth = FirebaseAuth.getInstance();
-        //10:59 CONTINUAR VIENDDO Y SEGUIR CON AUTH
         mAuth.useAppLanguage();
 
         FirebaseUser user = mAuth.getCurrentUser();

@@ -455,4 +455,8 @@ public class VentanaAñadirEvento extends AppCompatActivity {
             // Maneja otros tipos de URI (por ejemplo, recursos locales)
         }
     }
+
+    public void volverAtras(View v){
+        super.finish();
+    }
 }

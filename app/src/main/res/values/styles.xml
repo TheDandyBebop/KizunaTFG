@@ -15,4 +15,16 @@
         <item name="android:textSize">28sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="titulos">
+        <item name="android:textColor">#9C74A5</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+    </style>
+    <style name="noTitulo">
+        <item name="android:textColor">#9C74A5</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
 </resources>

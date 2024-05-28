@@ -36,7 +36,7 @@ public class VentanaPrincipal extends AppCompatActivity {
         myAdapter.addFragment(new Chats()); // Agrega un fragmento "Chats" al adaptador
         myAdapter.addFragment(new Eventos()); // Agrega un fragmento "Eventos" al adaptador
         myViewPager2.setAdapter(myAdapter); // Establece el adaptador en el ViewPager2
-        myViewPager2.setCurrentItem(1); // Esto establece el fragmento de "Chats" como la primera ventana
+        //myViewPager2.setCurrentItem(1); // Esto establece el fragmento de "Chats" como la primera ventana
         myTabs = findViewById(R.id.layoutTabs); // Encuentra el TabLayout en el diseño utilizando su ID
 
         myTabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
