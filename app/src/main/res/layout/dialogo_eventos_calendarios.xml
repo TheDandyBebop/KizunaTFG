@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poetsen"
+        android:fontFamily="@font/montserrat_semibold"
         android:text="Eventos de:"
         android:textColor="#5F4A8B"
         android:textSize="20sp" />
@@ -21,11 +21,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poetsen"
+        android:layout_toEndOf="@+id/textView16"
+        android:fontFamily="@font/montserrat_semibold"
         android:text="TextView"
         android:textColor="#5F4A8B"
-        android:textSize="20sp"
-        android:layout_toEndOf="@+id/textView16" />
+        android:textSize="20sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/RecyclerCalendarEvent"
@@ -43,7 +43,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poetsen"
+        android:fontFamily="@font/montserrat_semibold"
         android:text="fecha"
         android:textColor="#5F4A8B"
         android:textSize="20sp" />
@@ -64,7 +64,7 @@
             android:layout_weight="1"
             android:backgroundTint="#5F4A8B"
             android:clickable="false"
-            android:fontFamily="@font/poetsen"
+            android:fontFamily="@font/montserrat_semibold"
             android:text="Crear Evento"
             android:textColorLink="#FFFFFF"
             android:visibility="invisible" />
@@ -76,7 +76,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:backgroundTint="#5F4A8B"
-            android:fontFamily="@font/poetsen"
+            android:fontFamily="@font/montserrat_semibold"
             android:text="Cerrar"
             android:textColorLink="#FFFFFF" />
     </LinearLayout>

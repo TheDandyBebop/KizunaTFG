@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2C2C2C"
+    android:background="#000000"
     tools:context=".ventanaContactos">
 
 
@@ -27,7 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="90dp"
         android:scaleType="centerCrop"
@@ -74,15 +74,16 @@
 
     <TextView
         android:id="@+id/tv_NomContacto"
-        style="@style/welcome"
+        style="@style/titulos"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="68dp"
-        android:fontFamily="@font/bree_serif"
         android:text="TextView"
         android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/iv_Contacto"
         app:layout_constraintTop_toTopOf="parent" />
@@ -93,6 +94,7 @@
         android:layout_height="60dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/background_round"
+        android:fontFamily="@font/montserrat"
         android:hint="Message..."
         android:padding="5dp"
         android:textAlignment="viewStart"

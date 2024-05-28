@@ -17,15 +17,15 @@
 
     <TextView
         android:id="@+id/tv_Nombre_chat"
-        style="@style/welcome"
+        style="@style/titulos"
         android:layout_width="0dp"
         android:layout_height="36dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="112dp"
-        android:fontFamily="@font/bree_serif"
         android:text="TextView"
         android:textAlignment="viewStart"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/iv_Icono_chats"
@@ -42,13 +42,15 @@
 
     <TextView
         android:id="@+id/tv_ult_msj"
-        android:layout_width="0dp"
-        android:layout_height="17dp"
+        style="@style/titulos"
+        android:layout_width="185dp"
+        android:layout_height="21dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="125dp"
         android:layout_marginBottom="32dp"
-        android:fontFamily="@font/bree_serif"
+        android:fontFamily="@font/montserrat"
         android:text="TextView"
+        android:textColor="#A393A6"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/iv_Icono_chats" />

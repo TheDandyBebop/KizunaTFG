@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="bienvenida_ES" translatable="true">Bienvenido a Kizuna</string>
-    <string name="privacidad_ES" translatable="true">Por favor acepte nuestra politica de privacidad pulsando "Continuar"</string>
+    <string name="bienvenida_ES" translatable="true">Bienvenido</string>
+    <string name="privacidad_ES" translatable="true">Por favor acepte nuestra politica de privacidad</string>
     <string name="btnAceptar_ES" translatable="true">Continuar</string>
-    <string name="introduciTelefono_ES" translatable="true">Introduce tu numero de telefono</string>
+    <string name="introduciTelefono_ES" translatable="true">Introducí tu número de teléfono</string>
     <string name="introduciCodTelefono_ES" translatable="true">Introduce el codigo de verificacion</string>
-    <string name="introduciNombreUsuario_ES" translatable="true">Introduci tu nombre de Usuario y Foto de perfil</string>
+    <string name="introduciNombreUsuario_ES" translatable="true">Introduci nombre de usuario y foto de perfil</string>
     <string name="btnVerificarCodTelefono_ES" translatable="true">Verificar</string>
     <string name="numUser_ES" translatable="true">Nombre Usuario</string>
 

@@ -28,7 +28,7 @@
 
             <TextView
                 android:id="@+id/tv_Desc_dialog"
-                style="@style/welcome"
+                style="@style/noTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iv_dialog"
@@ -36,7 +36,6 @@
                 android:layout_marginTop="22dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="0dp"
-                android:fontFamily="@font/bree_serif"
                 android:gravity="center"
                 android:text="Description goes here"
                 android:textAlignment="viewStart"
@@ -45,68 +44,70 @@
 
             <TextView
                 android:id="@+id/tv_titulo_Inicio"
+                style="@style/titulos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_Desc_dialog"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/poetsen"
                 android:text="Inicio:"
                 android:textColor="#7C5685"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView4"
+                style="@style/noTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_titulo_Inicio"
                 android:layout_alignStart="@id/tv_titulo_Inicio"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/bree_serif"
                 android:text="Start date"
                 android:textColor="#9C74A5" />
 
             <TextView
                 android:id="@+id/tv_titulo_Fin"
+                style="@style/titulos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textView4"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/poetsen"
                 android:text="Fin:"
                 android:textColor="#7C5685"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView5"
+                style="@style/noTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_titulo_Fin"
                 android:layout_alignStart="@id/tv_titulo_Fin"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/bree_serif"
                 android:text="End date"
                 android:textColor="#9C74A5" />
+
             <TextView
                 android:id="@+id/tv_titulo_Ubi"
+                style="@style/titulos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textView4"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/poetsen"
                 android:text="Ubicacion:"
                 android:textColor="#7C5685"
                 android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/tv_ubi"
+                style="@style/noTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_titulo_Fin"
                 android:layout_alignStart="@id/tv_titulo_Fin"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/bree_serif"
                 android:text="Ubicacion"
                 android:textColor="#9C74A5" />
             <LinearLayout
@@ -123,7 +124,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/poetsen"
+                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Cerrar"
                     android:textColor="#FAFAFA"
                     android:textSize="12sp" />
@@ -133,7 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/poetsen"
+                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Añadir evento"
                     android:textColor="#FAFAFA"
                     android:textSize="12sp" />
@@ -143,7 +144,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/poetsen"
+                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Compartir"
                     android:textColor="#FAFAFA"
                     android:textSize="12sp" />

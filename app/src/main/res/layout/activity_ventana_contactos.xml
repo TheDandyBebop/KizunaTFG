@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="25dp"
+        android:fontFamily="@font/montserrat_extrabold"
         android:text="@string/tituloContactos"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/reciclerContactos"

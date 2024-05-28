@@ -5,22 +5,27 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5F4A8A"
     tools:context=".DatosPersonales"
     tools:ignore="ExtraText">
 
     <TextView
         android:id="@+id/tvNombreUsuario"
-        style="@style/welcome"
-        android:layout_width="331dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="40dp"
+        style="@style/titulos"
+        android:layout_width="362dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="80dp"
         android:layout_marginBottom="65dp"
-        android:fontFamily="@font/poetsen"
+        android:fontFamily="@font/montserrat_extrabold"
         android:text="@string/introduciNombreUsuario_ES"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/ivFotoPerfil"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/ivFotoPerfil"
@@ -30,12 +35,25 @@
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/hotline"
+        android:tag="@drawable/hotline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:tag="@drawable/hotline"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/iv_overlay_image"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@id/iv_imgEvento"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/etUsernamer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/editar_ico" />
 
     <EditText
         android:id="@+id/etUsernamer"
@@ -44,11 +62,12 @@
         android:layout_marginStart="75dp"
         android:layout_marginEnd="76dp"
         android:layout_marginBottom="232dp"
-        android:background="@drawable/background_round"
+        android:background="@drawable/caja_bordes"
         android:ems="10"
         android:hint="@string/numUser_ES"
         android:inputType="text"
         android:padding="10dp"
+        android:textColor="#5F4A8A"
         android:textColorLink="#5E5656"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,11 +75,12 @@
 
     <Button
         android:id="@+id/btnEnviarNombreFoto"
-        android:layout_width="138dp"
+        style="@style/CustomButtonStyle"
+        android:layout_width="260dp"
         android:layout_height="67dp"
         android:layout_marginStart="137dp"
-        android:layout_marginEnd="137dp"
 
+        android:layout_marginEnd="137dp"
         android:layout_marginBottom="88dp"
         android:text="@string/btnAceptar_ES"
         app:layout_constraintBottom_toBottomOf="parent"
