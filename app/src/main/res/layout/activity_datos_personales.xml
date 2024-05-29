@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -14,76 +13,59 @@
         style="@style/titulos"
         android:layout_width="362dp"
         android:layout_height="122dp"
-        android:layout_marginStart="24dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:layout_marginBottom="65dp"
         android:fontFamily="@font/montserrat_extrabold"
         android:text="@string/introduciNombreUsuario_ES"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/ivFotoPerfil"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textSize="30sp" />
 
     <ImageView
         android:id="@+id/ivFotoPerfil"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="244dp"
+        android:layout_below="@id/tvNombreUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/hotline"
         android:tag="@drawable/hotline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/iv_overlay_image"
         android:layout_width="37dp"
         android:layout_height="34dp"
-        android:layout_alignBottom="@id/iv_imgEvento"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="130dp"
-        android:layout_marginBottom="40dp"
+        android:layout_below="@id/ivFotoPerfil"
+        android:layout_marginTop="-25dp"
+        android:layout_marginStart="150dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/etUsernamer"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/editar_ico" />
 
     <EditText
         android:id="@+id/etUsernamer"
         android:layout_width="260dp"
         android:layout_height="65dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="232dp"
+        android:layout_below="@id/iv_overlay_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
         android:background="@drawable/caja_bordes"
         android:ems="10"
         android:hint="@string/numUser_ES"
         android:inputType="text"
         android:padding="10dp"
         android:textColor="#5F4A8A"
-        android:textColorLink="#5E5656"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textColorLink="#5E5656" />
 
     <Button
         android:id="@+id/btnEnviarNombreFoto"
         style="@style/CustomButtonStyle"
         android:layout_width="260dp"
         android:layout_height="67dp"
-        android:layout_marginStart="137dp"
-
-        android:layout_marginEnd="137dp"
-        android:layout_marginBottom="88dp"
-        android:text="@string/btnAceptar_ES"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_below="@id/etUsernamer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/btnAceptar_ES" />
+</RelativeLayout>

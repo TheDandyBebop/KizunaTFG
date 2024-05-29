@@ -276,5 +276,7 @@ public class VentanaNuevoEventoGlobal extends AppCompatActivity {
 
         return Uri.parse(uriString);
     }
-
+    public void volverAtras(View v){
+        super.finish();
+    }
 }

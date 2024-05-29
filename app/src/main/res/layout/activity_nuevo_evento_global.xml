@@ -9,44 +9,58 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:onClick="volverAtras"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/baseline_arrow_back_24" />
+
         <TextView
             android:id="@+id/tv_tituloVentana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/poetsen"
-            android:gravity="center_horizontal"
-            android:text="Añadir Nuevo Evento Global"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="Agregar Evento"
+            android:textAlignment="viewStart"
             android:textColor="#5F4A8B"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView17"
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:fontFamily="@font/bree_serif"
-            android:text="Imagen:"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/iv_imgEvento"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="110dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/img_standard" />
+            android:layout_marginTop="24dp">
 
+            <ImageView
+                android:id="@+id/iv_imgEvento"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_shape"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/img_standard" />
+
+            <ImageView
+                android:id="@+id/iv_overlay_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignBottom="@id/iv_imgEvento"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="-10dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/editar_ico" />
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:fontFamily="@font/bree_serif"
-            android:text="Titulo:"
+            android:text="Titulo"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -59,15 +73,18 @@
             android:ems="10"
             android:hint="Titulo"
             android:inputType="text"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C" />
+
+
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:fontFamily="@font/bree_serif"
-            android:text="Descripcion:"
+            android:text="Descripción"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -80,11 +97,13 @@
             android:background="@drawable/caja_bordes"
             android:ems="10"
             android:gravity="start|top"
-            android:hint="Descripcion del evento"
+            android:hint="Descripción del evento"
             android:hyphenationFrequency="normal"
             android:inputType="textMultiLine"
             android:padding="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C"
             android:textSize="16sp" />
 
         <TextView
@@ -92,8 +111,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:fontFamily="@font/bree_serif"
-            android:text="Ubicacion:"
+            android:text="Ubicacion"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -106,15 +124,17 @@
             android:ems="10"
             android:hint="Zaragoza"
             android:inputType="text"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C" />
+
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:fontFamily="@font/bree_serif"
-            android:text="Fecha:"
+            android:text="Fecha"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -125,19 +145,19 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/caja_bordes"
             android:editable="false"
-            android:inputType="none"
             android:ems="10"
             android:hint="26/02/2000"
-
-            android:padding="8dp" />
+            android:inputType="none"
+            android:padding="8dp"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:fontFamily="@font/bree_serif"
-            android:text="Hora de Inicio:"
+            android:text="Hora de Inicio"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -151,7 +171,9 @@
             android:ems="10"
             android:hint="00:00"
             android:inputType="none"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C" />
 
         <TextView
             android:id="@+id/textView14"
@@ -159,7 +181,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/bree_serif"
-            android:text="Hora de Finalizacion:"
+            android:text="Hora de Finalizacion"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -171,9 +193,11 @@
             android:background="@drawable/caja_bordes"
             android:editable="false"
             android:ems="10"
-            android:inputType="none"
             android:hint="00:00"
-            android:padding="8dp" />
+            android:inputType="none"
+            android:padding="8dp"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C" />
 
         <Button
             android:id="@+id/btn_Aceptar_AE"

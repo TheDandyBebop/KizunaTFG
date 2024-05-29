@@ -73,7 +73,9 @@
             android:ems="10"
             android:hint="Titulo"
             android:inputType="text"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C" />
 
 
 
@@ -100,6 +102,8 @@
             android:inputType="textMultiLine"
             android:padding="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C"
             android:textSize="16sp" />
 
         <TextView
@@ -120,7 +124,9 @@
             android:ems="10"
             android:hint="Zaragoza"
             android:inputType="text"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C" />
 
         <TextView
             android:id="@+id/textView11"
@@ -158,7 +164,9 @@
             android:ems="10"
             android:hint="26/02/2000"
             android:inputType="none"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C" />
 
         <TextView
             android:id="@+id/textView13"
@@ -179,7 +187,9 @@
             android:ems="10"
             android:hint="00:00"
             android:inputType="none"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C" />
 
         <TextView
             android:id="@+id/textView14"
@@ -201,7 +211,9 @@
             android:ems="10"
             android:hint="00:00"
             android:inputType="none"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColor="#4C4A4A"
+            android:textColorHint="#8C8C8C" />
 
         <Button
             android:id="@+id/btn_Aceptar_AE"

@@ -1,50 +1,42 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5F4A8A"
-    tools:context=".MainActivity">
+    android:background="#5F4A8A">
 
     <ImageView
         android:id="@+id/iv_privacidad"
         android:layout_width="348dp"
         android:layout_height="314dp"
-        android:layout_marginStart="31dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="130dp"
-        android:layout_marginEnd="32dp"
         android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kizuna_privacidad2" />
+        android:src="@drawable/kizuna_privacidad2" />
 
     <TextView
         android:id="@+id/tv_Privacy"
         style="@style/titulos"
         android:layout_width="246dp"
         android:layout_height="54dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="180dp"
+        android:layout_below="@id/iv_privacidad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
         android:text="@string/privacidad_ES"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_AceptarPrivacidad"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="347dp"
         android:layout_height="81dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="84dp"
+        android:layout_below="@id/tv_Privacy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
         android:background="@drawable/caja_bordes"
         android:fontFamily="@font/montserrat"
         android:text="@string/btnAceptar_ES"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="20sp" />
+
+</RelativeLayout>
