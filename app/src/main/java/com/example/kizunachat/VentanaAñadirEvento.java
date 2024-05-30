@@ -218,7 +218,7 @@ public class VentanaAñadirEvento extends AppCompatActivity {
     public static String[] separateDateTime(String dateTimeString) throws ParseException {
         String[] fechasHS = new String[2];
         if (dateTimeString.contains("a las")) {
-            String time = dateTimeString.substring(dateTimeString.indexOf("a las") + 7, dateTimeString.lastIndexOf("hs")).trim();
+            String time = dateTimeString.substring(dateTimeString.indexOf("a las") + 6, dateTimeString.lastIndexOf("hs")).trim();
             String date = dateTimeString.substring(0, dateTimeString.indexOf("a las")).trim();
             fechasHS[1] = time;
             fechasHS[0] = date;
